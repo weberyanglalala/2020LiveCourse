@@ -67,9 +67,12 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1200px;
 }
 
+.text-align-center {
+  text-align: center;
+}
 .h1-title {
   font-size: 80px;
   line-height: 94px;
@@ -112,13 +115,18 @@ img {
 .mb-48 {
   margin-bottom: 48px;
 }
+.mb-56 {
+  margin-bottom: 56px;
+}
 .mb-64 {
   margin-bottom: 64px;
 }
 .mb-68 {
   margin-bottom: 68px;
 }
-
+.zoom:hover {
+  transform: scale(1.1)
+}
 /* banner */
 .banner {
   height: 958px;
@@ -142,9 +150,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.experience, .job-title, .job {
-  text-align: center;
-}
+
 .job {
   width: 384px;
   /* outline: 2px solid tomato; */
@@ -163,7 +169,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 /* my brand */
 .brand {
@@ -176,10 +181,33 @@ img {
   /* outline: 2px solid tomato; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 .item-pic {
   margin-bottom: 40px;
-  margin-right: 24px;
   max-width: 100%;
+}
+/* other works */
+.otherWorks {
+  padding: 64px 0px 160px 0px;
+}
+.works {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Contact */
+.contact {
+  color: #FFFFFF;
+  background-color: #000000;
+  padding: 64px 0 80px 0px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.contact-info a:hover {
+  color:#cab7b7;
 }
