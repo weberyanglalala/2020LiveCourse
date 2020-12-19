@@ -10,4 +10,4 @@ https://weberyanglalala.github.io/2020LiveCourse/
 ## 第三、四週作業
  - [第三、四週作業 - 個人網站 首頁頁面](https://weberyanglalala.github.io/2020LiveCourse/Week04_assignment/dist/index.html)
  - [第三、四週作業 - 個人網站 location頁面](https://weberyanglalala.github.io/2020LiveCourse/Week04_assignment/dist/location.html)
- - [第三、四週作業 - 個人網站 Code](https://github.com/weberyanglalala/2020LiveCourse/tree/master/Week04_assignment)
+ - [第三、四週作業 - 個人網站 Code](https://github.com/weberyanglalala/2020LiveCourse/tree/master/Week04_assignment/dist)
