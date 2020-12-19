@@ -1,0 +1,54 @@
+.header {
+  padding: 30px 88px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 a {
+    width: 80px;
+    height: 49px;
+    display: block;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+.nav-bar {
+  display: flex;
+  width: 492px;
+  justify-content: space-between;
+}
+.nav-item a{
+  padding: 8px;
+}
+@media (max-width: 992px){
+  .nav-bar {
+    width: 420px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .header img {
+    padding: 10px;
+  }
+  .nav-bar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .nav-item {
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+  }
+  .nav-item a {
+    display: block;
+    width: 100%;
+    padding: 8px 54px;
+  }
+}

@@ -1,0 +1,787 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif; }
+
+/* 全域 border box */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* 主體 CSS */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.dflex-aic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.tac {
+  text-align: center; }
+
+.Roboto-bold-32 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000; }
+
+.Roboto-bold-24 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 63px;
+  font-weight: bold;
+  color: #650300; }
+
+.Roboto-med-14 {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 63px;
+  font-weight: medium;
+  color: #650300; }
+
+.Roboto-36 {
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 54px; }
+
+.Roboto-16 {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px; }
+
+.Noto-14 {
+  font-size: 14px;
+  line-height: 21px; }
+
+.Noto-bold-24 {
+  font-family: 'Noto Sans';
+  font-size: 24px;
+  line-height: 80px;
+  font-weight: bold;
+  color: #650300; }
+
+.Noto-med-16 {
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: medium;
+  color: #FFFFFF; }
+
+a {
+  text-decoration: none;
+  color: #FBF2F2; }
+
+.header {
+  padding: 30px 88px;
+  background-color: #AA0601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .header h1 a {
+    width: 80px;
+    height: 49px;
+    display: block;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/logo.png?raw=true);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap; }
+
+.nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 492px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.nav-item a {
+  padding: 8px; }
+
+@media (max-width: 992px) {
+  .nav-bar {
+    width: 420px; } }
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+  .header img {
+    padding: 10px; }
+  .nav-bar {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .nav-item {
+    width: 50%;
+    text-align: center;
+    border: 1px solid white; }
+  .nav-item a {
+    display: block;
+    width: 100%;
+    padding: 8px 54px; } }
+
+.footer {
+  background-color: #AA0601;
+  color: #FBF2F2;
+  padding: 40px 48px; }
+
+.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #FBF2F2;
+  padding-bottom: 8px; }
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 464px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.contact-method {
+  font-size: 36px;
+  line-height: 54px; }
+  .contact-method img {
+    padding-right: 12px;
+    width: 48px; }
+
+.social-media {
+  width: 208px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .copyright p {
+    font-size: 16px;
+    line-height: 24px; }
+  .copyright ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 188px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.footer-logo {
+  padding-right: 38px; }
+
+.footer-logo-mobile {
+  display: none; }
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 40px 48px; }
+  .contact-method {
+    font-size: 20px;
+    line-height: 30px; }
+    .contact-method img {
+      padding-right: 8px;
+      width: 32px; }
+  .social-media {
+    width: 120px; }
+    .social-media li a img {
+      width: 24px; }
+  .copyright p {
+    font-size: 14px;
+    line-height: 21px; }
+  .footer-logo {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 23px 15px; }
+  .footer-nav {
+    display: none; }
+  .contact-method {
+    font-size: 16px; }
+    .contact-method img {
+      padding-right: 4px;
+      width: 20px; }
+  .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+    .copyright p {
+      margin-bottom: 6px; }
+    .copyright ul {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      .copyright ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .copyright ul li .footer-logo-mobile {
+          display: block;
+          width: 46px; } }
+
+.mb-24 {
+  margin-bottom: 24px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mb-60 {
+  margin-bottom: 60px; }
+
+.banner {
+  height: 840px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true); }
+  .banner .banner-title {
+    position: absolute;
+    top: 458px;
+    right: 400px; }
+    .banner .banner-title .h2-subtitle {
+      text-align: right;
+      color: #650300;
+      font-size: 36px;
+      line-height: 1.5;
+      font-weight: bold; }
+    .banner .banner-title .h2-title {
+      color: #650300;
+      font-size: 64px;
+      line-height: 1.5;
+      font-weight: bold; }
+
+.profession {
+  background-color: #AA06010D;
+  padding: 64px 40px; }
+  .profession .h3-title {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #650300; }
+  .profession ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .profession li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 208px;
+    margin-bottom: 40px; }
+    .profession li img {
+      display: block;
+      height: 100px;
+      margin-bottom: 40px; }
+  .profession .h4-title {
+    color: #650300;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center; }
+  .profession .pro-description {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 1.5; }
+
+.classic {
+  padding: 64px 0px 48px 0px;
+  max-width: 1200px; }
+  .classic .h3-title {
+    font-size: 48px;
+    line-height: 1.5;
+    color: #650300;
+    font-weight: bold;
+    text-align: center; }
+  .classic ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px; }
+    .classic ul li h4 {
+      width: 635px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #AA0601;
+      font-size: 48px;
+      padding-left: 30px;
+      font-weight: bold;
+      line-height: 1.5;
+      font-style: italic; }
+    .classic ul li img {
+      max-width: 635px; }
+  .classic ul .second-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+
+.design {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+  padding: 64px 0px 80px 0px; }
+  .design h3 {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 60px; }
+  .design ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1110px; }
+    .design ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .design h4 {
+    font-size: 72px;
+    line-height: 1.5;
+    color: #AA0601;
+    font-weight: bold; }
+  .design .design-item1 {
+    width: 540px;
+    height: 472px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png);
+    opacity: 0.5; }
+  .design .design-item2 {
+    width: 540px;
+    height: 472px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png);
+    opacity: 0.5; }
+
+.suggesters {
+  padding: 64px 0px; }
+  .suggesters h4 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    margin-bottom: 60px; }
+  .suggesters ul {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .suggesters ul li {
+      width: 255px;
+      border: 1px solid #DEE2E6;
+      margin-bottom: 28px; }
+      .suggesters ul li img {
+        width: 100%; }
+      .suggesters ul li .suggest {
+        padding: 16px; }
+        .suggesters ul li .suggest h5 {
+          font-size: 14px;
+          line-height: 1.5; }
+        .suggesters ul li .suggest p {
+          font-size: 16px;
+          line-height: 1.5; }
+        .suggesters ul li .suggest .edited-time {
+          color: #707070; }
+
+.contact-us {
+  background-color: #AA06010D;
+  padding: 64px 0 80px 0; }
+
+.contact {
+  max-width: 730px; }
+  .contact h4 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+  .contact form h5 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px; }
+  .contact .form-name, .contact .form-phone, .contact .form-mail, .contact .form-response, .contact .form-response {
+    width: 100%;
+    margin-bottom: 20px; }
+  .contact .agreement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 42px; }
+    .contact .agreement input {
+      margin-top: 6px; }
+    .contact .agreement p {
+      margin-bottom: 0; }
+  .contact .submit-btn {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    padding: 16px 143px;
+    color: #FFFFFF;
+    background-color: #AA0601; }
+
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true); }
+    .banner .banner-title {
+      top: 480px;
+      right: 40px; }
+      .banner .banner-title .h2-title {
+        font-size: 48px; }
+      .banner .banner-title .h2-subtitle {
+        font-size: 20px; }
+  .profession .h3-title {
+    font-size: 32px; }
+  .profession ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profession ul li {
+      width: 49%; }
+      .profession ul li p {
+        width: 237px;
+        margin: 0 auto; }
+  .classic {
+    max-width: 690px; }
+    .classic .h3-title {
+      font-size: 32px; }
+    .classic ul li .classic-avatar {
+      width: 390px; }
+    .classic ul li h4 {
+      font-size: 28px;
+      line-height: 1.5; }
+      .classic ul li h4 img {
+        width: 32px;
+        height: 32px; }
+    .classic ul .second-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+  .design h3 {
+    font-size: 32px; }
+  .design ul {
+    max-width: 768px; }
+    .design ul li h4 {
+      font-size: 32px; }
+    .design ul .design-item1, .design ul .design-item2 {
+      width: 330px;
+      height: 280px; }
+  .suggesters h4 {
+    font-size: 32px; }
+  .suggesters ul {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .suggesters ul li {
+      width: 45%; }
+  .contact {
+    max-width: 450px; }
+    .contact h4 {
+      font-size: 32px; }
+    .contact p {
+      font-size: 16px; }
+    .contact form h5 {
+      font-size: 14px;
+      margin-bottom: 2px; }
+    .contact form .agreement p {
+      font-size: 16px;
+      line-height: 1.5; }
+    .contact .submit-btn {
+      width: 210px;
+      padding: 8px 76px; } }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 394px; }
+    .banner .banner-title {
+      top: 352px;
+      right: 15px; }
+      .banner .banner-title .h2-title {
+        font-size: 32px; }
+      .banner .banner-title .h2-subtitle {
+        font-size: 16px; }
+  .profession .h3-title {
+    font-size: 24px;
+    line-height: 2; }
+  .profession ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profession ul li {
+      width: 90%; }
+  .classic {
+    width: 345px; }
+    .classic .h3-title {
+      font-size: 24px;
+      line-height: 2; }
+    .classic ul li .classic-avatar {
+      display: none; }
+    .classic ul li h4 {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #FFFFFF;
+      padding: 0; }
+      .classic ul li h4 img {
+        color: #FFFFFF; }
+    .classic ul .first-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png); }
+    .classic ul .second-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png); }
+    .classic ul .third-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png); }
+  .design {
+    outline: 2px solid tomato;
+    padding: 32px 0 16px 0; }
+    .design h3 {
+      font-size: 20px;
+      line-height: 48px;
+      margin-bottom: 20px; }
+    .design ul {
+      width: 345px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .design ul li h4 {
+        font-size: 32px; }
+      .design ul .design-item1, .design ul .design-item2 {
+        height: 284px;
+        margin-bottom: 16px; }
+  .suggesters h4 {
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom: 20px; }
+  .suggesters ul {
+    max-width: 345px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    .suggesters ul li {
+      width: 100%; }
+  .contact {
+    max-width: 345px; }
+    .contact h4 {
+      font-size: 20px; }
+    .contact .submit-btn {
+      width: 165px;
+      padding: 8px 54px; } }
+
+.location-banner {
+  height: 304px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true); }
+
+.faq {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+  .faq h1 {
+    font-size: 64px;
+    line-height: 1.5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .faq h1 img {
+      display: block;
+      width: 58px; }
+
+.qanda {
+  max-width: 1100px;
+  padding: 80px 0 304px 0; }
+  .qanda .h2-title {
+    font-size: 32px;
+    line-height: 63px;
+    margin-bottom: 36px; }
+  .qanda .qa-section .question {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 16px; }
+  .qanda .qa-section .answer {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 920px;
+    margin: 0 auto;
+    margin-bottom: 40px; }
+
+@media (max-width: 992px) {
+  .faq {
+    padding-left: 40px; }
+    .faq h1 {
+      font-size: 48px;
+      line-height: 80px; }
+      .faq h1 img {
+        width: 48px; }
+  .qanda {
+    padding: 40px 40px 104px 40px; }
+    .qanda .h2-title {
+      font-size: 20px;
+      line-height: 63px;
+      margin-bottom: 0; }
+    .qanda .qa-section .question {
+      font-size: 16px; }
+    .qanda .qa-section .answer {
+      font-size: 14px; } }
+
+@media (max-width: 768px) {
+  .location-banner {
+    height: 143px; }
+  .faq {
+    padding-left: 15px; }
+    .faq h1 {
+      font-size: 28px;
+      line-height: 40px; }
+      .faq h1 img {
+        width: 28px; } }
+
+/*# sourceMappingURL=all.css.map */

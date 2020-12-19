@@ -1,0 +1,388 @@
+.banner {
+  height: 840px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true); }
+  .banner .banner-title {
+    position: absolute;
+    top: 458px;
+    right: 400px; }
+    .banner .banner-title .h2-subtitle {
+      text-align: right;
+      color: #650300;
+      font-size: 36px;
+      line-height: 1.5;
+      font-weight: bold; }
+    .banner .banner-title .h2-title {
+      color: #650300;
+      font-size: 64px;
+      line-height: 1.5;
+      font-weight: bold; }
+
+.profession {
+  background-color: #AA06010D;
+  padding: 64px 40px; }
+  .profession .h3-title {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #650300; }
+  .profession ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+  .profession li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 208px;
+    margin-bottom: 40px; }
+    .profession li img {
+      display: block;
+      height: 100px;
+      margin-bottom: 40px; }
+  .profession .h4-title {
+    color: #650300;
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center; }
+  .profession .pro-description {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 1.5; }
+
+.classic {
+  padding: 64px 0px 48px 0px;
+  max-width: 1200px; }
+  .classic .h3-title {
+    font-size: 48px;
+    line-height: 1.5;
+    color: #650300;
+    font-weight: bold;
+    text-align: center; }
+  .classic ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 32px; }
+    .classic ul li h4 {
+      width: 635px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #AA0601;
+      font-size: 48px;
+      padding-left: 30px;
+      font-weight: bold;
+      line-height: 1.5;
+      font-style: italic; }
+    .classic ul li img {
+      max-width: 635px; }
+  .classic ul .second-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+
+.design {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+  padding: 64px 0px 80px 0px; }
+  .design h3 {
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 60px; }
+  .design ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 1110px; }
+    .design ul li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .design h4 {
+    font-size: 72px;
+    line-height: 1.5;
+    color: #AA0601;
+    font-weight: bold; }
+  .design .design-item1 {
+    width: 540px;
+    height: 472px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-8.png);
+    opacity: 0.5; }
+  .design .design-item2 {
+    width: 540px;
+    height: 472px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-9.png);
+    opacity: 0.5; }
+
+.suggesters {
+  padding: 64px 0px; }
+  .suggesters h4 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #650300;
+    text-align: center;
+    margin-bottom: 60px; }
+  .suggesters ul {
+    max-width: 1110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .suggesters ul li {
+      width: 255px;
+      border: 1px solid #DEE2E6;
+      margin-bottom: 28px; }
+      .suggesters ul li img {
+        width: 100%; }
+      .suggesters ul li .suggest {
+        padding: 16px; }
+        .suggesters ul li .suggest h5 {
+          font-size: 14px;
+          line-height: 1.5; }
+        .suggesters ul li .suggest p {
+          font-size: 16px;
+          line-height: 1.5; }
+        .suggesters ul li .suggest .edited-time {
+          color: #707070; }
+
+.contact-us {
+  background-color: #AA06010D;
+  padding: 64px 0 80px 0; }
+
+.contact {
+  max-width: 730px; }
+  .contact h4 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; }
+  .contact p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px; }
+  .contact form h5 {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 4px; }
+  .contact .form-name, .contact .form-phone, .contact .form-mail, .contact .form-response, .contact .form-response {
+    width: 100%;
+    margin-bottom: 20px; }
+  .contact .agreement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 42px; }
+    .contact .agreement input {
+      margin-top: 6px; }
+    .contact .agreement p {
+      margin-bottom: 0; }
+  .contact .submit-btn {
+    display: block;
+    margin: 0 auto;
+    width: 350px;
+    padding: 16px 143px;
+    color: #FFFFFF;
+    background-color: #AA0601; }
+
+@media (max-width: 992px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true); }
+    .banner .banner-title {
+      top: 480px;
+      right: 40px; }
+      .banner .banner-title .h2-title {
+        font-size: 48px; }
+      .banner .banner-title .h2-subtitle {
+        font-size: 20px; }
+  .profession .h3-title {
+    font-size: 32px; }
+  .profession ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profession ul li {
+      width: 49%; }
+      .profession ul li p {
+        width: 237px;
+        margin: 0 auto; }
+  .classic {
+    max-width: 690px; }
+    .classic .h3-title {
+      font-size: 32px; }
+    .classic ul li .classic-avatar {
+      width: 390px; }
+    .classic ul li h4 {
+      font-size: 28px;
+      line-height: 1.5; }
+      .classic ul li h4 img {
+        width: 32px;
+        height: 32px; }
+    .classic ul .second-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
+  .design h3 {
+    font-size: 32px; }
+  .design ul {
+    max-width: 768px; }
+    .design ul li h4 {
+      font-size: 32px; }
+    .design ul .design-item1, .design ul .design-item2 {
+      width: 330px;
+      height: 280px; }
+  .suggesters h4 {
+    font-size: 32px; }
+  .suggesters ul {
+    max-width: 768px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .suggesters ul li {
+      width: 45%; }
+  .contact {
+    max-width: 450px; }
+    .contact h4 {
+      font-size: 32px; }
+    .contact p {
+      font-size: 16px; }
+    .contact form h5 {
+      font-size: 14px;
+      margin-bottom: 2px; }
+    .contact form .agreement p {
+      font-size: 16px;
+      line-height: 1.5; }
+    .contact .submit-btn {
+      width: 210px;
+      padding: 8px 76px; } }
+
+@media (max-width: 768px) {
+  .banner {
+    height: 394px; }
+    .banner .banner-title {
+      top: 352px;
+      right: 15px; }
+      .banner .banner-title .h2-title {
+        font-size: 32px; }
+      .banner .banner-title .h2-subtitle {
+        font-size: 16px; }
+  .profession .h3-title {
+    font-size: 24px;
+    line-height: 2; }
+  .profession ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .profession ul li {
+      width: 90%; }
+  .classic {
+    width: 345px; }
+    .classic .h3-title {
+      font-size: 24px;
+      line-height: 2; }
+    .classic ul li .classic-avatar {
+      display: none; }
+    .classic ul li h4 {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: #FFFFFF;
+      padding: 0; }
+      .classic ul li h4 img {
+        color: #FFFFFF; }
+    .classic ul .first-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-1.png); }
+    .classic ul .second-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-2.png); }
+    .classic ul .third-item {
+      height: 134px;
+      background-size: cover;
+      background-position: center;
+      background-image: url(https://hexschool.github.io/webLayoutTraining1st/week3/product-3.png); }
+  .design {
+    outline: 2px solid tomato;
+    padding: 32px 0 16px 0; }
+    .design h3 {
+      font-size: 20px;
+      line-height: 48px;
+      margin-bottom: 20px; }
+    .design ul {
+      width: 345px;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .design ul li h4 {
+        font-size: 32px; }
+      .design ul .design-item1, .design ul .design-item2 {
+        height: 284px;
+        margin-bottom: 16px; }
+  .suggesters h4 {
+    font-size: 20px;
+    line-height: 48px;
+    margin-bottom: 20px; }
+  .suggesters ul {
+    max-width: 345px;
+    padding-right: 15px;
+    padding-left: 15px; }
+    .suggesters ul li {
+      width: 100%; }
+  .contact {
+    max-width: 345px; }
+    .contact h4 {
+      font-size: 20px; }
+    .contact .submit-btn {
+      width: 165px;
+      padding: 8px 54px; } }
+
+/*# sourceMappingURL=homepage.css.map */

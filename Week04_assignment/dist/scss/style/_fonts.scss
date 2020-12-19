@@ -1,0 +1,55 @@
+// fonts
+.Roboto-bold-32 {
+  font-family: 'Roboto';
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+.Roboto-bold-24 {
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 63px;
+  font-weight: bold;
+  color: #650300;
+}
+.Roboto-med-14 {
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 63px;
+  font-weight: medium;
+  color: #650300;
+}
+.Roboto-36 {
+  font-family: 'Roboto';
+  font-size: 36px;
+  line-height: 54px;
+}
+.Roboto-16 {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 24px;
+}
+.Noto-14 {
+  font-size: 14px;
+  line-height: 21px;
+}
+.Noto-bold-24 {
+  font-family: 'Noto Sans';
+  font-size: 24px;
+  line-height: 80px;
+  font-weight: bold;
+  color: #650300;
+}
+.Noto-med-16 {
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: medium;
+  color: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	color: $secondary-color;
+}
