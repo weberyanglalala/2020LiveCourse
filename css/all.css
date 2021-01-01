@@ -76,9 +76,18 @@
   font-family: 'Lato', sans-serif;
 }
 
-.assignment {
-  padding-left: 32px;
-  padding-right: 32px;
-  outline: 2px solid tomato;
+.abc {
+  font-size: 24px;
+  line-height: 33px;
+  font-family: "Lato";
+}
+
+.header {
+  padding-top: 32px;
+  margin-bottom: 48px;
+}
+
+.header .material-icons {
+  font-size: 24px;
 }
 /*# sourceMappingURL=all.css.map */
