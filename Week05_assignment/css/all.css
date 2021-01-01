@@ -77,9 +77,8 @@
 }
 
 .assignment {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  padding-left: 32px;
+  padding-right: 32px;
   outline: 2px solid tomato;
 }
 /*# sourceMappingURL=all.css.map */
