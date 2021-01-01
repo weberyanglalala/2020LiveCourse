@@ -76,9 +76,11 @@
   font-family: 'Lato', sans-serif;
 }
 
-.abc {
+.h1-title {
+  margin: 0;
   font-size: 24px;
-  line-height: 33px;
+  line-height: 32px;
+  font-weight: bold;
   font-family: "Lato";
 }
 
@@ -89,5 +91,29 @@
 
 .header .material-icons {
   font-size: 24px;
+}
+
+.header .add-icon {
+  color: #2A8356;
+  padding-right: 8px;
+}
+
+.nav {
+  width: 85%;
+}
+
+.addNewAdmin {
+  font-family: "Lato";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.search {
+  width: 72px;
+}
+
+.create-icon {
+  margin-right: 25px;
 }
 /*# sourceMappingURL=all.css.map */
