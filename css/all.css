@@ -1,0 +1,84 @@
+.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  width: 296px;
+  background-color: #EDF4EE;
+}
+
+.sidebar img {
+  padding: 32px;
+}
+
+.sidebar .topic {
+  margin-bottom: 362px;
+}
+
+.sidebar .entry {
+  padding-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.sidebar .entry:hover {
+  color: #2A8356;
+  border-left: 2px solid #2A8356;
+}
+
+.sidebar .material-icons {
+  font-size: 24px;
+  padding-right: 16px;
+}
+
+.sidebar .user {
+  padding: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar .user .avatar img {
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.sidebar .user ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.sidebar .user .username {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+.sidebar .user .useremail {
+  font-size: 14px;
+  line-height: 24px;
+  color: #0000009A;
+  font-family: 'Lato', sans-serif;
+}
+
+.assignment {
+  padding-left: 32px;
+  padding-right: 32px;
+  outline: 2px solid tomato;
+}
+/*# sourceMappingURL=all.css.map */
